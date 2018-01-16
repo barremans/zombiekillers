@@ -1,0 +1,5 @@
+v11.0
+
+New Skinned Wizard
+
+First Public Release

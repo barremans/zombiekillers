@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+	<category label="General">
+		<setting type="lsep" label="[COLOR=yellow]Set Backup Location[/COLOR]"/>
+		<setting id="path" type="folder" label="Choose Backup Storage Location" default=""/>
+		<setting type="lsep" label="[COLOR=yellow]Auto Clean Settings[/COLOR]"/>
+		<setting id="autoclean" type="bool" label="Enable Auto Clean" default="false"/>
+		<setting id="clearcache" type="bool" label="Clear Cache on Startup" default="true" enable="!eq(-1,false)"/>
+		<setting id="clearpackages" type="bool" label="Clear Packages on Startup" default="true" enable="!eq(-2,false)"/>
+   	</category>  	
+
+	<category label="Install Settings">
+		<setting id="intro" type="bool" label="INTRO Video" default="true" visable="true"/>
+		<setting type="lsep" label="Keep Settings When Installing Build:"/>
+		<setting id="notify" type="bool" label="Disable Notification on Startup" />
+		<setting id="noteid" type="text" label="Latest Notification" visible="false" />
+		<setting id="notedismiss" type="bool" label="Dismiss or Remind me later" visible="false" />
+		<setting type="lsep" label="Upload Log: "/>
+		<setting id="email" type="text" label="E-Mail Address" />
+	</category>
+	
+    <category label="Views">
+		<setting id="developer" type="bool" label="Show Developer Menu: " enable="false" default=""/>
+		<setting id="auto-view" type="bool" label="Enable Auto View" default="true"/>
+		<setting id="viewType" type="number" label="View Type" default="50" enable="!eq(-1,false)"/>
+		<setting id="MAIN" type="number" label="MAIN" default="50" enable="!eq(-1,false)"/>
+		<setting id="THUMB" type="number" label="THUMB" default="500" enable="!eq(-1,false)"/>
+	</category>  	
+  </settings>
